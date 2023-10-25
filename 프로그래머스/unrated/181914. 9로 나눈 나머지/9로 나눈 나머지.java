@@ -6,7 +6,6 @@ class Solution {
                 .map(Character::getNumericValue) // 문자를 숫자로 매핑
                 .toArray();
 
-        int sum = Arrays.stream(intArr).sum();
-        return sum % 9;
+        return Arrays.stream(intArr).sum() % 9;
     }
 }
